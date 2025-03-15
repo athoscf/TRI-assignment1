@@ -1,0 +1,6 @@
+Invoking command in '/root/webots_ros2/build/firstrobot_webots': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/webots_ros2 -DCMAKE_INSTALL_PREFIX=/root/webots_ros2/install/firstrobot_webots
+Invoked command in '/root/webots_ros2/build/firstrobot_webots' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/webots_ros2 -DCMAKE_INSTALL_PREFIX=/root/webots_ros2/install/firstrobot_webots
+Invoking command in '/root/webots_ros2/build/firstrobot_webots': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/webots_ros2/build/firstrobot_webots -- -j12 -l12
+Invoked command in '/root/webots_ros2/build/firstrobot_webots' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/webots_ros2/build/firstrobot_webots -- -j12 -l12
+Invoking command in '/root/webots_ros2/build/firstrobot_webots': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/webots_ros2/build/firstrobot_webots
+Invoked command in '/root/webots_ros2/build/firstrobot_webots' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/webots_ros2/build/firstrobot_webots

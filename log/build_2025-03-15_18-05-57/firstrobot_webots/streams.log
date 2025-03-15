@@ -1,0 +1,44 @@
+[0.010s] Invoking command in '/root/webots_ros2/build/firstrobot_webots': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/webots_ros2/build/firstrobot_webots -- -j12 -l12
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target obstacle_avoider[0m
+[0.058s] [ 50%] Built target firstrobot_webots
+[0.060s] [ 75%] [32mBuilding CXX object CMakeFiles/obstacle_avoider.dir/src/ObstacleAvoider.cpp.o[0m
+[6.460s] [100%] [32m[1mLinking CXX executable obstacle_avoider[0m
+[6.775s] [100%] Built target obstacle_avoider
+[6.784s] Invoked command in '/root/webots_ros2/build/firstrobot_webots' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/webots_ros2/build/firstrobot_webots -- -j12 -l12
+[6.792s] Invoking command in '/root/webots_ros2/build/firstrobot_webots': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/webots_ros2/build/firstrobot_webots
+[6.799s] -- Install configuration: ""
+[6.799s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/my_robot_driver.xml
+[6.799s] -- Installing: /root/webots_ros2/install/firstrobot_webots/lib/firstrobot_webots/obstacle_avoider
+[6.803s] -- Set runtime path of "/root/webots_ros2/install/firstrobot_webots/lib/firstrobot_webots/obstacle_avoider" to ""
+[6.803s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/include
+[6.803s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/include/firstrobot_webots
+[6.803s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/include/firstrobot_webots/ObstacleAvoider.hpp
+[6.803s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/include/firstrobot_webots/MyRobotDriver.hpp
+[6.803s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/lib/libfirstrobot_webots.so
+[6.803s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//launch
+[6.804s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//launch/robot_launch.py
+[6.804s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//resource
+[6.804s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//resource/my_robot.urdf
+[6.804s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//worlds
+[6.804s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//worlds/my_world.wbt
+[6.804s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/library_path.sh
+[6.804s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/library_path.dsv
+[6.804s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/ament_index/resource_index/package_run_dependencies/firstrobot_webots
+[6.805s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/ament_index/resource_index/parent_prefix_path/firstrobot_webots
+[6.805s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/ament_prefix_path.sh
+[6.805s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/ament_prefix_path.dsv
+[6.805s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/path.sh
+[6.805s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/path.dsv
+[6.805s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/local_setup.bash
+[6.805s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/local_setup.sh
+[6.805s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/local_setup.zsh
+[6.805s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/local_setup.dsv
+[6.805s] -- Installing: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/package.dsv
+[6.806s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/ament_index/resource_index/packages/firstrobot_webots
+[6.806s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/ament_index/resource_index/webots_ros2_driver__pluginlib__plugin/firstrobot_webots
+[6.806s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.806s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/cmake/ament_cmake_export_libraries-extras.cmake
+[6.806s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/cmake/firstrobot_webotsConfig.cmake
+[6.806s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/cmake/firstrobot_webotsConfig-version.cmake
+[6.807s] -- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/package.xml
+[6.807s] Invoked command in '/root/webots_ros2/build/firstrobot_webots' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/webots_ros2/build/firstrobot_webots
