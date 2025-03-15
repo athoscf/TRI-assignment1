@@ -1,0 +1,22 @@
+[0.011s] Invoking command in '/root/webots_ros2/build/firstrobot_webots': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/webots_ros2/build/firstrobot_webots -- -j12 -l12
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target obstacle_avoider[0m
+[0.058s] [ 50%] Built target firstrobot_webots
+[0.061s] [ 75%] [32mBuilding CXX object CMakeFiles/obstacle_avoider.dir/src/ObstacleAvoider.cpp.o[0m
+[1.893s] [01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:[m[K In member function ‘[01m[Kvoid ObstacleAvoider::rightSensorCallback(sensor_msgs::msg::Range_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.893s] [01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:54:34:[m[K [01;31m[Kerror: [m[K‘[01m[KMAX_ANGULAR_VELOCITY[m[K’ was not declared in this scope
+[1.893s]    54 |     command_message->angular.z = [01;31m[KMAX_ANGULAR_VELOCITY[m[K;  // Vira com limite seguro
+[1.893s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.902s] [01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:62:36:[m[K [01;31m[Kerror: [m[K‘[01m[KMAX_ANGULAR_VELOCITY[m[K’ was not declared in this scope
+[1.902s]    62 |   if (command_message->angular.z > [01;31m[KMAX_ANGULAR_VELOCITY[m[K) command_message->angular.z = MAX_ANGULAR_VELOCITY;
+[1.902s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.911s] [01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:[m[K In member function ‘[01m[Kvoid ObstacleAvoider::rightSensorCallbackRobot2(sensor_msgs::msg::Range_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.912s] [01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:83:34:[m[K [01;31m[Kerror: [m[K‘[01m[KMAX_ANGULAR_VELOCITY[m[K’ was not declared in this scope
+[1.912s]    83 |     command_message->angular.z = [01;31m[KMAX_ANGULAR_VELOCITY[m[K;  // Vira com limite seguro
+[1.912s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.920s] [01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:91:36:[m[K [01;31m[Kerror: [m[K‘[01m[KMAX_ANGULAR_VELOCITY[m[K’ was not declared in this scope
+[1.920s]    91 |   if (command_message->angular.z > [01;31m[KMAX_ANGULAR_VELOCITY[m[K) command_message->angular.z = MAX_ANGULAR_VELOCITY;
+[1.920s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.857s] gmake[2]: *** [CMakeFiles/obstacle_avoider.dir/build.make:76: CMakeFiles/obstacle_avoider.dir/src/ObstacleAvoider.cpp.o] Error 1
+[3.858s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/obstacle_avoider.dir/all] Error 2
+[3.858s] gmake: *** [Makefile:146: all] Error 2
+[3.861s] Invoked command in '/root/webots_ros2/build/firstrobot_webots' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/webots_ros2/build/firstrobot_webots -- -j12 -l12

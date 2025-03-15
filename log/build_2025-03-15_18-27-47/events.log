@@ -1,0 +1,121 @@
+[0.000000] (-) TimerEvent: {}
+[0.000325] (firstrobot_webots) JobQueued: {'identifier': 'firstrobot_webots', 'dependencies': OrderedDict()}
+[0.000527] (firstrobot_webots) JobStarted: {'identifier': 'firstrobot_webots'}
+[0.007442] (firstrobot_webots) JobProgress: {'identifier': 'firstrobot_webots', 'progress': 'cmake'}
+[0.008784] (firstrobot_webots) JobProgress: {'identifier': 'firstrobot_webots', 'progress': 'build'}
+[0.008857] (firstrobot_webots) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/webots_ros2/build/firstrobot_webots', '--', '-j12', '-l12'], 'cwd': '/root/webots_ros2/build/firstrobot_webots', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'efe6133ea32b'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/webots_ros2/install/firstrobot_webots/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/usr/local'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_VERSION', '11.8.0'), ('COLCON_PREFIX_PATH', '/root/webots_ros2/install'), ('ROS_DISTRO', 'humble'), ('__VK_LAYER_NV_optimus', 'NVIDIA_only'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=510,driver<511 brand=unknown,driver>=510,driver<511 brand=nvidia,driver>=510,driver<511 brand=nvidiartx,driver>=510,driver<511 brand=geforce,driver>=510,driver<511 brand=geforcertx,driver>=510,driver<511 brand=quadro,driver>=510,driver<511 brand=quadrortx,driver>=510,driver<511 brand=titan,driver>=510,driver<511 brand=titanrtx,driver>=510,driver<511 brand=tesla,driver>=515,driver<516 brand=unknown,driver>=515,driver<516 brand=nvidia,driver>=515,driver<516 brand=nvidiartx,driver>=515,driver<516 brand=geforce,driver>=515,driver<516 brand=geforcertx,driver>=515,driver<516 brand=quadro,driver>=515,driver<516 brand=quadrortx,driver>=515,driver<516 brand=titan,driver>=515,driver<516 brand=titanrtx,driver>=515,driver<516'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/webots_ros2/install/firstrobot_webots:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/webots_ros2/build/firstrobot_webots'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/webots_ros2/install/firstrobot_webots:/opt/ros/humble')]), 'shell': False}
+[0.045973] (firstrobot_webots) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target obstacle_avoider\x1b[0m\n'}
+[0.058599] (firstrobot_webots) StdoutLine: {'line': b'[ 50%] Built target firstrobot_webots\n'}
+[0.061170] (firstrobot_webots) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_avoider.dir/src/ObstacleAvoider.cpp.o\x1b[0m\n'}
+[0.099726] (-) TimerEvent: {}
+[0.199987] (-) TimerEvent: {}
+[0.300295] (-) TimerEvent: {}
+[0.400577] (-) TimerEvent: {}
+[0.500897] (-) TimerEvent: {}
+[0.601216] (-) TimerEvent: {}
+[0.701510] (-) TimerEvent: {}
+[0.801828] (-) TimerEvent: {}
+[0.902171] (-) TimerEvent: {}
+[1.002480] (-) TimerEvent: {}
+[1.102780] (-) TimerEvent: {}
+[1.203097] (-) TimerEvent: {}
+[1.303373] (-) TimerEvent: {}
+[1.403654] (-) TimerEvent: {}
+[1.503933] (-) TimerEvent: {}
+[1.604228] (-) TimerEvent: {}
+[1.704508] (-) TimerEvent: {}
+[1.804808] (-) TimerEvent: {}
+[1.905134] (-) TimerEvent: {}
+[2.005427] (-) TimerEvent: {}
+[2.105707] (-) TimerEvent: {}
+[2.206000] (-) TimerEvent: {}
+[2.306291] (-) TimerEvent: {}
+[2.406579] (-) TimerEvent: {}
+[2.506872] (-) TimerEvent: {}
+[2.607170] (-) TimerEvent: {}
+[2.707452] (-) TimerEvent: {}
+[2.807748] (-) TimerEvent: {}
+[2.908048] (-) TimerEvent: {}
+[3.008391] (-) TimerEvent: {}
+[3.108690] (-) TimerEvent: {}
+[3.208985] (-) TimerEvent: {}
+[3.309277] (-) TimerEvent: {}
+[3.409569] (-) TimerEvent: {}
+[3.509882] (-) TimerEvent: {}
+[3.610199] (-) TimerEvent: {}
+[3.710497] (-) TimerEvent: {}
+[3.810794] (-) TimerEvent: {}
+[3.911120] (-) TimerEvent: {}
+[4.011422] (-) TimerEvent: {}
+[4.111711] (-) TimerEvent: {}
+[4.211999] (-) TimerEvent: {}
+[4.312299] (-) TimerEvent: {}
+[4.412587] (-) TimerEvent: {}
+[4.512863] (-) TimerEvent: {}
+[4.613154] (-) TimerEvent: {}
+[4.713427] (-) TimerEvent: {}
+[4.813715] (-) TimerEvent: {}
+[4.914009] (-) TimerEvent: {}
+[5.014332] (-) TimerEvent: {}
+[5.114603] (-) TimerEvent: {}
+[5.214888] (-) TimerEvent: {}
+[5.315174] (-) TimerEvent: {}
+[5.415457] (-) TimerEvent: {}
+[5.515742] (-) TimerEvent: {}
+[5.616012] (-) TimerEvent: {}
+[5.716258] (-) TimerEvent: {}
+[5.816540] (-) TimerEvent: {}
+[5.916809] (-) TimerEvent: {}
+[6.017098] (-) TimerEvent: {}
+[6.117368] (-) TimerEvent: {}
+[6.217663] (-) TimerEvent: {}
+[6.317952] (-) TimerEvent: {}
+[6.418260] (-) TimerEvent: {}
+[6.518494] (-) TimerEvent: {}
+[6.618793] (-) TimerEvent: {}
+[6.674500] (firstrobot_webots) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable obstacle_avoider\x1b[0m\n'}
+[6.718915] (-) TimerEvent: {}
+[6.819207] (-) TimerEvent: {}
+[6.919488] (-) TimerEvent: {}
+[6.969996] (firstrobot_webots) StdoutLine: {'line': b'[100%] Built target obstacle_avoider\n'}
+[6.979093] (firstrobot_webots) CommandEnded: {'returncode': 0}
+[6.979935] (firstrobot_webots) JobProgress: {'identifier': 'firstrobot_webots', 'progress': 'install'}
+[6.987093] (firstrobot_webots) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/webots_ros2/build/firstrobot_webots'], 'cwd': '/root/webots_ros2/build/firstrobot_webots', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'efe6133ea32b'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/webots_ros2/install/firstrobot_webots/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/usr/local'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_VERSION', '11.8.0'), ('COLCON_PREFIX_PATH', '/root/webots_ros2/install'), ('ROS_DISTRO', 'humble'), ('__VK_LAYER_NV_optimus', 'NVIDIA_only'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=510,driver<511 brand=unknown,driver>=510,driver<511 brand=nvidia,driver>=510,driver<511 brand=nvidiartx,driver>=510,driver<511 brand=geforce,driver>=510,driver<511 brand=geforcertx,driver>=510,driver<511 brand=quadro,driver>=510,driver<511 brand=quadrortx,driver>=510,driver<511 brand=titan,driver>=510,driver<511 brand=titanrtx,driver>=510,driver<511 brand=tesla,driver>=515,driver<516 brand=unknown,driver>=515,driver<516 brand=nvidia,driver>=515,driver<516 brand=nvidiartx,driver>=515,driver<516 brand=geforce,driver>=515,driver<516 brand=geforcertx,driver>=515,driver<516 brand=quadro,driver>=515,driver<516 brand=quadrortx,driver>=515,driver<516 brand=titan,driver>=515,driver<516 brand=titanrtx,driver>=515,driver<516'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/webots_ros2/install/firstrobot_webots:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/webots_ros2/build/firstrobot_webots'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/webots_ros2/install/firstrobot_webots:/opt/ros/humble')]), 'shell': False}
+[6.992570] (firstrobot_webots) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.992758] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/my_robot_driver.xml\n'}
+[6.992904] (firstrobot_webots) StdoutLine: {'line': b'-- Installing: /root/webots_ros2/install/firstrobot_webots/lib/firstrobot_webots/obstacle_avoider\n'}
+[6.996922] (firstrobot_webots) StdoutLine: {'line': b'-- Set runtime path of "/root/webots_ros2/install/firstrobot_webots/lib/firstrobot_webots/obstacle_avoider" to ""\n'}
+[6.997029] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/include\n'}
+[6.997126] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/include/firstrobot_webots\n'}
+[6.997179] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/include/firstrobot_webots/ObstacleAvoider.hpp\n'}
+[6.997231] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/include/firstrobot_webots/MyRobotDriver.hpp\n'}
+[6.997341] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/lib/libfirstrobot_webots.so\n'}
+[6.997462] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//launch\n'}
+[6.997520] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//launch/robot_launch.py\n'}
+[6.997587] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//resource\n'}
+[6.997674] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//resource/my_robot.urdf\n'}
+[6.997744] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//worlds\n'}
+[6.997818] (firstrobot_webots) StdoutLine: {'line': b'-- Installing: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots//worlds/my_world.wbt\n'}
+[6.997899] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/library_path.sh\n'}
+[6.997969] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/library_path.dsv\n'}
+[6.998030] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/ament_index/resource_index/package_run_dependencies/firstrobot_webots\n'}
+[6.998120] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/ament_index/resource_index/parent_prefix_path/firstrobot_webots\n'}
+[6.998183] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/ament_prefix_path.sh\n'}
+[6.998257] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/ament_prefix_path.dsv\n'}
+[6.998337] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/path.sh\n'}
+[6.998398] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/environment/path.dsv\n'}
+[6.998447] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/local_setup.bash\n'}
+[6.998495] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/local_setup.sh\n'}
+[6.998550] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/local_setup.zsh\n'}
+[6.998597] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/local_setup.dsv\n'}
+[6.998645] (firstrobot_webots) StdoutLine: {'line': b'-- Installing: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/package.dsv\n'}
+[6.998693] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/ament_index/resource_index/packages/firstrobot_webots\n'}
+[6.998746] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/ament_index/resource_index/webots_ros2_driver__pluginlib__plugin/firstrobot_webots\n'}
+[6.998794] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.998859] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.998921] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/cmake/firstrobot_webotsConfig.cmake\n'}
+[6.998968] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/cmake/firstrobot_webotsConfig-version.cmake\n'}
+[6.999014] (firstrobot_webots) StdoutLine: {'line': b'-- Up-to-date: /root/webots_ros2/install/firstrobot_webots/share/firstrobot_webots/package.xml\n'}
+[6.999965] (firstrobot_webots) CommandEnded: {'returncode': 0}
+[7.014930] (firstrobot_webots) JobEnded: {'identifier': 'firstrobot_webots', 'rc': 0}
+[7.015572] (-) EventReactorShutdown: {}

@@ -1,0 +1,76 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/obstacle_avoider.dir/src/ObstacleAvoider.cpp.o[0m
+[ 75%] Built target firstrobot_webots
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:[m[K In constructor ‘[01m[KObstacleAvoider::ObstacleAvoider()[m[K’:
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:14:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot1_control[m[K’ was not declared in this scope; did you mean ‘[01m[KRobotControl[m[K’?
+   14 |   [01;31m[Krobot1_control[m[K.publisher = create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 1);
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+      |   [32m[KRobotControl[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:[m[K In lambda function:
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:18:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot1_control[m[K’ is not captured
+   18 |         return this->leftSensorCallback(msg, &[01;31m[Krobot1_control[m[K);
+      |                                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:17:12:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   17 |       [this[01;36m[K][m[K(const sensor_msgs::msg::Range::SharedPtr msg) {
+      |            [01;36m[K^[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:14:3:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>robot1_control[m[K’ declared here
+   14 |   [01;36m[Krobot1_control[m[K.publisher = create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 1);
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:[m[K In lambda function:
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:24:48:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot1_control[m[K’ is not captured
+   24 |         return this->rightSensorCallback(msg, &[01;31m[Krobot1_control[m[K);
+      |                                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:23:12:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   23 |       [this[01;36m[K][m[K(const sensor_msgs::msg::Range::SharedPtr msg) {
+      |            [01;36m[K^[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:14:3:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>robot1_control[m[K’ declared here
+   14 |   [01;36m[Krobot1_control[m[K.publisher = create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 1);
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:[m[K In constructor ‘[01m[KObstacleAvoider::ObstacleAvoider()[m[K’:
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:29:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot2_control[m[K’ was not declared in this scope; did you mean ‘[01m[KRobotControl[m[K’?
+   29 |   [01;31m[Krobot2_control[m[K.publisher = create_publisher<geometry_msgs::msg::Twist>("/robot2/cmd_vel", 1);
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+      |   [32m[KRobotControl[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:[m[K In lambda function:
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:33:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot2_control[m[K’ is not captured
+   33 |         return this->leftSensorCallback(msg, &[01;31m[Krobot2_control[m[K);
+      |                                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:32:12:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   32 |       [this[01;36m[K][m[K(const sensor_msgs::msg::Range::SharedPtr msg) {
+      |            [01;36m[K^[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:29:3:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>robot2_control[m[K’ declared here
+   29 |   [01;36m[Krobot2_control[m[K.publisher = create_publisher<geometry_msgs::msg::Twist>("/robot2/cmd_vel", 1);
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:[m[K In lambda function:
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:39:48:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot2_control[m[K’ is not captured
+   39 |         return this->rightSensorCallback(msg, &[01;31m[Krobot2_control[m[K);
+      |                                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:38:12:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   38 |       [this[01;36m[K][m[K(const sensor_msgs::msg::Range::SharedPtr msg) {
+      |            [01;36m[K^[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:29:3:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>robot2_control[m[K’ declared here
+   29 |   [01;36m[Krobot2_control[m[K.publisher = create_publisher<geometry_msgs::msg::Twist>("/robot2/cmd_vel", 1);
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:[m[K At global scope:
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:44:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid ObstacleAvoider::leftSensorCallback(sensor_msgs::msg::Range_<std::allocator<void> >::SharedPtr, RobotControl*)[m[K’
+   44 | void [01;31m[KObstacleAvoider[m[K::leftSensorCallback(const sensor_msgs::msg::Range::SharedPtr msg, RobotControl* robot) {
+      |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:1[m[K:
+[01m[K/root/webots_ros2/include/firstrobot_webots/ObstacleAvoider.hpp:12:8:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid ObstacleAvoider::leftSensorCallback(sensor_msgs::msg::Range_<std::allocator<void> >::SharedPtr)[m[K’
+   12 |   void [01;36m[KleftSensorCallback[m[K(const sensor_msgs::msg::Range::SharedPtr msg);
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/include/firstrobot_webots/ObstacleAvoider.hpp:7:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ObstacleAvoider[m[K’ defined here
+    7 | class [01;36m[KObstacleAvoider[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:48:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid ObstacleAvoider::rightSensorCallback(sensor_msgs::msg::Range_<std::allocator<void> >::SharedPtr, RobotControl*)[m[K’
+   48 | void [01;31m[KObstacleAvoider[m[K::rightSensorCallback(const sensor_msgs::msg::Range::SharedPtr msg, RobotControl* robot) {
+      |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/root/webots_ros2/src/ObstacleAvoider.cpp:1[m[K:
+[01m[K/root/webots_ros2/include/firstrobot_webots/ObstacleAvoider.hpp:13:8:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid ObstacleAvoider::rightSensorCallback(sensor_msgs::msg::Range_<std::allocator<void> >::SharedPtr)[m[K’
+   13 |   void [01;36m[KrightSensorCallback[m[K(const sensor_msgs::msg::Range::SharedPtr msg);
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/webots_ros2/include/firstrobot_webots/ObstacleAvoider.hpp:7:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ObstacleAvoider[m[K’ defined here
+    7 | class [01;36m[KObstacleAvoider[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/obstacle_avoider.dir/build.make:76: CMakeFiles/obstacle_avoider.dir/src/ObstacleAvoider.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/obstacle_avoider.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
