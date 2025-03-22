@@ -14,6 +14,11 @@ void MyRobotDriver::init(
     webots_ros2_driver::WebotsNode *node,
     std::unordered_map<std::string, std::string> &parameters) {
 
+  std::string current_namespace = node->get_namespace();
+  RCLCPP_INFO(node->get_logger(), "Identified current namespace on RobotDriver :  %s", current_namespace.c_str());
+
+  std::string cmd_vel_topic = current_namespace + "/cmd_vel";
+
   right_motor = wb_robot_get_device("right wheel motor");
   left_motor = wb_robot_get_device("left wheel motor");
 
@@ -24,7 +29,7 @@ void MyRobotDriver::init(
   wb_motor_set_velocity(right_motor, 0.0);
 
   cmd_vel_subscription_ = node->create_subscription<geometry_msgs::msg::Twist>(
-      "/cmd_vel", rclcpp::SensorDataQoS().reliable(),
+      cmd_vel_topic, rclcpp::SensorDataQoS().reliable(),
       [this](const geometry_msgs::msg::Twist::SharedPtr msg){
         this->cmd_vel_msg.linear = msg->linear;
         this->cmd_vel_msg.angular = msg->angular;
