@@ -43,7 +43,7 @@ Solid {
       }
     }
   ]
-  name "question mark"
+  name "big question mark"
   boundingObject Extrusion {
     crossSection [
       -0.08 0.08, 0.08 0.08, 0.08 -0.08, -0.08 -0.08, -0.08 0.08
@@ -153,6 +153,24 @@ Robot {
                 height 0.004
                 radius 0.008
               }
+            },
+            Transform {
+              translation 0 0 0.07
+              rotation 1 0 0 3.14159
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 1 0  # Yellow, matching sensor
+                    transparency 0.7  # Semi-transparent
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry Cone {
+                    bottomRadius 0.077  
+                    height 0.15  
+                  }
+                }
+              ]
             }
           ]
         }
@@ -167,8 +185,8 @@ Robot {
       aperture 1
     }
     DistanceSensor {
-      translation 0.042 -0.02 0.063
-      rotation 0 0 1 -0.5235996938995747
+      translation 0.0223092 -0.0402501 0.063
+      rotation 0 0 -1 1.07
       children [
         USE SENSOR
       ]
@@ -211,22 +229,7 @@ Robot {
       endPoint Solid {
         translation 0 0.045 0.025
         children [
-          DEF WHEEL Transform {
-            rotation 1 0 0 1.5707996938995747
-            children [
-              Shape {
-                appearance PBRAppearance {
-                  baseColor 1 0 0
-                  roughness 1
-                  metalness 0
-                }
-                geometry Cylinder {
-                  height 0.01
-                  radius 0.025
-                }
-              }
-            ]
-          }
+          USE WHEEL
         ]
         name "left wheel"
         boundingObject USE WHEEL
@@ -260,7 +263,7 @@ Robot {
       children [
         Shape {
           appearance PBRAppearance {
-            baseColor 0 1 0  # Verde para diferenciar
+            baseColor 0 1 0
             roughness 1
             metalness 0
           }
@@ -275,28 +278,13 @@ Robot {
       translation 0.042 0.02 0.063
       rotation 0 0 1 0.5236003061004253
       children [
-        DEF SENSOR Transform {
-          rotation 0 1 0 1.5708
-          children [
-            Shape {
-              appearance PBRAppearance {
-                baseColor 1 1 0
-                roughness 1
-                metalness 0
-              }
-              geometry Cylinder {
-                height 0.004
-                radius 0.008
-              }
-            }
-          ]
-        }
+        USE SENSOR
       ]
-      name "ds0" 
+      name "ds0"
       lookupTable [
         0 1020 0
         0.05 1020 0
-        0.35 0 0
+        0.15 0 0
       ]
       numberOfRays 2
       aperture 1
@@ -307,11 +295,11 @@ Robot {
       children [
         USE SENSOR
       ]
-      name "ds1" 
+      name "ds1"
       lookupTable [
         0 1020 0
         0.05 1020 0
-        0.35 0 0
+        0.15 0 0
       ]
       numberOfRays 2
       aperture 1
@@ -326,5 +314,5 @@ Robot {
   physics Physics {
   }
   controller "<extern>"
-  name "robot2" 
+  name "robot2"
 }
