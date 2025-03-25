@@ -22,7 +22,7 @@ Solid {
   children [
     Shape {
       appearance PBRAppearance {
-        baseColor 0.6 0.3 0.1
+        baseColor 0.6 0.1 0.1
         roughness 1
         metalness 0
       }
@@ -142,7 +142,7 @@ Robot {
       children [
         Shape {
           appearance PBRAppearance {
-            baseColor 0 0 1
+            baseColor 0 1 0
             roughness 1
             metalness 0
           }
@@ -157,7 +157,7 @@ Robot {
       translation 0.042 0.02 0.063
       rotation 0 0 1 0.5236003061004253
       children [
-        DEF SENSOR Pose {
+        DEF SENSOR_CONE Pose {
           rotation 0 1 0 1.5708
           children [
             Shape {
@@ -205,7 +205,7 @@ Robot {
       translation 0.0223092 -0.0402501 0.063
       rotation 0 0 -1 1.07
       children [
-        USE SENSOR
+        USE SENSOR_CONE
       ]
       name "ds1"
       lookupTable [
@@ -250,6 +250,7 @@ Robot {
           ]
         }
       ]
+      fieldOfView 1
     }
     HingeJoint {
       jointParameters HingeJointParameters {
@@ -300,7 +301,7 @@ Robot {
       children [
         Shape {
           appearance PBRAppearance {
-            baseColor 0 1 0
+            baseColor 1 0 1
             roughness 1
             metalness 0
           }
@@ -315,7 +316,22 @@ Robot {
       translation 0.042 0.02 0.063
       rotation 0 0 1 0.5236003061004253
       children [
-        USE SENSOR
+        DEF SENSOR Pose {
+          rotation 0 1 0 1.5708
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.004
+                radius 0.008
+              }
+            }
+          ]
+        }
       ]
       name "ds0"
       lookupTable [

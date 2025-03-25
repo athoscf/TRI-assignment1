@@ -21,6 +21,5 @@ private:
 
   double left_sensor_value{0.0};
   double right_sensor_value{0.0};
-  std::vector<uint8_t> blue_channel;
 
 };
