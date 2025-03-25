@@ -37,6 +37,27 @@ install(
   DESTINATION include
 )
 
+# Robot seeker
+include_directories(
+  include
+)
+add_executable(robot_seeker
+  src/RobotSeeker.cpp
+)
+ament_target_dependencies(robot_seeker
+  rclcpp
+  geometry_msgs
+  sensor_msgs
+)
+install(TARGETS
+  robot_seeker
+  DESTINATION lib/${PROJECT_NAME}
+)
+install(
+  DIRECTORY include/
+  DESTINATION include
+)
+
 # MyRobotDriver library
 add_library(
   ${PROJECT_NAME}

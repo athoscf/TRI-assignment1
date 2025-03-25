@@ -13,7 +13,7 @@ def generate_launch_description():
     robot2_description_path = os.path.join(package_dir, 'resource', 'robot2.urdf')
 
     webots = WebotsLauncher(
-        world=os.path.join(package_dir, 'worlds', 'my_world.wbt')
+        world=os.path.join(package_dir, 'worlds', 'my_world2.wbt')
     )
 
     robot1_driver = WebotsController(
@@ -39,11 +39,11 @@ def generate_launch_description():
         name='robot1_obstacle_avoider',
     )
 
-    robot2_obstacle_avoider = Node(
+    robot2_robot_seeker = Node(
         package='firstrobot_webots',
-        executable='obstacle_avoider',
+        executable='robot_seeker',
         namespace='robot2',
-        name='robot2_obstacle_avoider',
+        name='robot2_robot_seeker',
     )
 
     return LaunchDescription([
@@ -51,7 +51,7 @@ def generate_launch_description():
         robot1_driver,
         robot2_driver,
         robot1_obstacle_avoider,
-        robot2_obstacle_avoider,
+        robot2_robot_seeker,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,
