@@ -12,17 +12,9 @@ ObstacleAvoider::ObstacleAvoider() : Node("obstacle_avoider") {
   RCLCPP_INFO(this->get_logger(), "Identified current namespace on ObstacleAvoider :  %s", current_namespace.c_str());
 
   std::string cmd_vel_topic = current_namespace + "/cmd_vel";
-  std::string left_sensor_topic = current_namespace + "/left_sensor";
   std::string right_sensor_topic = current_namespace + "/right_sensor";
 
   publisher_ = create_publisher<geometry_msgs::msg::Twist>(cmd_vel_topic, 1);
-
-  left_sensor_sub_ = create_subscription<sensor_msgs::msg::Range>(
-      left_sensor_topic, 1,
-      [this](const sensor_msgs::msg::Range::SharedPtr msg){
-        return this->leftSensorCallback(msg);
-      }
-  );
 
   right_sensor_sub_ = create_subscription<sensor_msgs::msg::Range>(
       right_sensor_topic, 1,
@@ -30,11 +22,6 @@ ObstacleAvoider::ObstacleAvoider() : Node("obstacle_avoider") {
         return this->rightSensorCallback(msg);
       }
   );
-}
-
-void ObstacleAvoider::leftSensorCallback(
-    const sensor_msgs::msg::Range::SharedPtr msg) {
-  left_sensor_value = msg->range;
 }
 
 void ObstacleAvoider::rightSensorCallback(
@@ -47,7 +34,6 @@ void ObstacleAvoider::rightSensorCallback(
   command_message->linear.x = 0.1;  
   command_message->angular.z = 0.0;  // Default to no rotation
   
-
   if (right_sensor_value < MAX_RANGE * 0.95){
     if (right_sensor_value < MIN_RANGE * 1.1){
       command_message->linear.x = REVERSE_VEL;

@@ -154,10 +154,10 @@ Robot {
       ]
     }
     DistanceSensor {
-      translation 0.042 0.02 0.063
-      rotation 0 0 1 0.5236003061004253
+      translation 0.0223092 -0.0402501 0.063
+      rotation 0 0 -1 1.07
       children [
-        DEF SENSOR_CONE Pose {
+        DEF SENSOR Pose {
           rotation 0 1 0 1.5708
           children [
             Shape {
@@ -171,43 +171,10 @@ Robot {
                 radius 0.008
               }
             }
-            Pose {
-              translation 0 0 0.07
-              rotation 1 0 0 3.14159
-              children [
-                Shape {
-                  appearance PBRAppearance {
-                    baseColor 1 1 0
-                    transparency 0.7
-                    roughness 1
-                    metalness 0
-                  }
-                  geometry Cone {
-                    bottomRadius 0.077
-                    height 0.15
-                  }
-                }
-              ]
-            }
           ]
         }
       ]
       name "ds0"
-      lookupTable [
-        0 1020 0
-        0.05 1020 0
-        0.15 0 0
-      ]
-      numberOfRays 2
-      aperture 1
-    }
-    DistanceSensor {
-      translation 0.0223092 -0.0402501 0.063
-      rotation 0 0 -1 1.07
-      children [
-        USE SENSOR_CONE
-      ]
-      name "ds1"
       lookupTable [
         0 1020 0
         0.05 1020 0
@@ -235,7 +202,7 @@ Robot {
     Camera {
       translation 0.046 0 0.07
       children [
-        Transform {
+        Pose {
           rotation 0 1 0 1.5708
           children [
             Shape {
@@ -313,25 +280,10 @@ Robot {
       ]
     }
     DistanceSensor {
-      translation 0.042 0.02 0.063
-      rotation 0 0 1 0.5236003061004253
+      translation 0.045 0 0.053
+      rotation 0 0 -1 -5.307179586466759e-06
       children [
-        DEF SENSOR Pose {
-          rotation 0 1 0 1.5708
-          children [
-            Shape {
-              appearance PBRAppearance {
-                baseColor 1 1 0
-                roughness 1
-                metalness 0
-              }
-              geometry Cylinder {
-                height 0.004
-                radius 0.008
-              }
-            }
-          ]
-        }
+        USE SENSOR
       ]
       name "ds0"
       lookupTable [
@@ -343,8 +295,8 @@ Robot {
       aperture 1
     }
     DistanceSensor {
-      translation 0.042 -0.02 0.063
-      rotation 0 0 1 -0.5235996938995747
+      translation 0.022 -0.04 0.063
+      rotation 0 0 -1 1.07
       children [
         USE SENSOR
       ]

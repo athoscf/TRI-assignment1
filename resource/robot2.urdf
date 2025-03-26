@@ -3,7 +3,7 @@
     <webots>
         <device reference="ds0" type="DistanceSensor">
             <ros>
-                <topicName>/robot2/left_sensor</topicName>
+                <topicName>/robot2/front_sensor</topicName>
                 <alwaysOn>true</alwaysOn>
             </ros>
         </device>

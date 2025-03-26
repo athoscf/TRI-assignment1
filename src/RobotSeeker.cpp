@@ -1,28 +1,30 @@
 #include "firstrobot_webots/RobotSeeker.hpp"
 
-#define MAX_RANGE 0.15
-#define MIN_RANGE 0.06
+#define MIN_FRONT_RANGE 0.12
+#define MIN_SIDE_RANGE 0.06
+#define MAX_SIDE_RANGE 0.15
 #define OPTIMAL_DISTANCE 0.12 // Target distance from the wall (in meters)
 #define DISTANCE_TOLERANCE 0.01  // Acceptable range around optimal distance
 #define REVERSE_VEL -0.05
-#define CHASE_VEL 0.12
+#define BASE_VEL 0.1
+#define CHASE_VEL 0.1
 
 RobotSeeker::RobotSeeker() : Node("robot_seeker") {
 
   std::string current_namespace = this->get_namespace();
-  RCLCPP_INFO(this->get_logger(), "Identified current namespace on ObstacleAvoider :  %s", current_namespace.c_str());
+  RCLCPP_INFO(this->get_logger(), "Identified current namespace on RobotSeeker :  %s", current_namespace.c_str());
 
   std::string cmd_vel_topic = current_namespace + "/cmd_vel";
-  std::string left_sensor_topic = current_namespace + "/left_sensor";
+  std::string front_sensor_topic = current_namespace + "/front_sensor";
   std::string right_sensor_topic = current_namespace + "/right_sensor";
   std::string camera_topic = current_namespace + "/camera/image_color";
 
   publisher_ = create_publisher<geometry_msgs::msg::Twist>(cmd_vel_topic, 1);
 
-  left_sensor_sub_ = create_subscription<sensor_msgs::msg::Range>(
-      left_sensor_topic, 1,
+  front_sensor_sub_ = create_subscription<sensor_msgs::msg::Range>(
+      front_sensor_topic, 1,
       [this](const sensor_msgs::msg::Range::SharedPtr msg){
-        return this->leftSensorCallback(msg);
+        return this->frontSensorCallback(msg);
       }
   );
 
@@ -42,9 +44,9 @@ RobotSeeker::RobotSeeker() : Node("robot_seeker") {
 
 }
 
-void RobotSeeker::leftSensorCallback(
+void RobotSeeker::frontSensorCallback(
     const sensor_msgs::msg::Range::SharedPtr msg) {
-  left_sensor_value = msg->range;
+  front_sensor_value = msg->range;
 }
 
 void RobotSeeker::rightSensorCallback(
@@ -92,23 +94,27 @@ void RobotSeeker::cameraCallback(
 
       auto command_message = std::make_unique<geometry_msgs::msg::Twist>();
 
-      // Constant forward velocity
-      command_message->linear.x = 0.1;  
+      command_message->linear.x = BASE_VEL;  
       command_message->angular.z = 0.0;  // Default to no rotation
 
-      if (right_sensor_value < MIN_RANGE * 1.1){
+      if (right_sensor_value < MIN_SIDE_RANGE * 1.1 || front_sensor_value < MIN_FRONT_RANGE){
         command_message->linear.x = REVERSE_VEL;
       }
       else if (green_pixels_left > 0 || green_pixels_right > 0) {
         command_message->linear.x = CHASE_VEL;
-        if (green_pixels_left > green_pixels_right){
+        // if the difference between the number of pixels is greater 
+        // than 10% of the green pixels in the image
+        if (std::abs(green_pixels_left - green_pixels_right) < 0.1 * (green_pixels_left + green_pixels_right)){
+            command_message->angular.z = 0.0;
+        }
+        else if (green_pixels_left > green_pixels_right){
             command_message->angular.z = 1.0;
         }
         else if (green_pixels_right > green_pixels_left){
             command_message->angular.z = -1.0;
         }
       }
-      else if (right_sensor_value > MAX_RANGE * 0.95){
+      else if (right_sensor_value > MAX_SIDE_RANGE * 0.95){
         command_message->linear.x = 0.0;
         command_message->angular.z = -1.0;
       }
@@ -120,9 +126,6 @@ void RobotSeeker::cameraCallback(
       }
 
     publisher_->publish(std::move(command_message));
-  
-    // Log the results
-    RCLCPP_INFO(this->get_logger(), "Green pixels - Left: %d, Right: %d", green_pixels_left, green_pixels_right);
   }
 
 int main(int argc, char *argv[]) {
