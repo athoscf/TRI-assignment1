@@ -22,4 +22,7 @@ private:
   double front_sensor_value{0.0};
   double right_sensor_value{0.0};
 
+  std::pair<int, int> countGreenPixels(const sensor_msgs::msg::Image::SharedPtr msg);
+  std::unique_ptr<geometry_msgs::msg::Twist> createCommandMessage(int green_pixels_left, int green_pixels_right);
+
 };

@@ -4,7 +4,8 @@
 #define MIN_RANGE 0.06
 #define OPTIMAL_DISTANCE 0.12 // Target distance from the wall (in meters)
 #define DISTANCE_TOLERANCE 0.01  // Acceptable range around optimal distance
-#define REVERSE_VEL -0.05
+#define REVERSE_VEL -0.1
+#define BASE_VEL 0.09
 
 ObstacleAvoider::ObstacleAvoider() : Node("obstacle_avoider") {
 
@@ -31,7 +32,7 @@ void ObstacleAvoider::rightSensorCallback(
   auto command_message = std::make_unique<geometry_msgs::msg::Twist>();
 
   // Constant forward velocity
-  command_message->linear.x = 0.1;  
+  command_message->linear.x = BASE_VEL;  
   command_message->angular.z = 0.0;  // Default to no rotation
   
   if (right_sensor_value < MAX_RANGE * 0.95){
