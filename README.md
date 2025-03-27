@@ -1,6 +1,7 @@
 # Simple Reactive Robots
 
 **Intelligent Robotics Topics 2024/2025 | Masters in Artificial Intelligence**
+
 Faculty of Engineering of University of Porto
 
 ## Group A1G
