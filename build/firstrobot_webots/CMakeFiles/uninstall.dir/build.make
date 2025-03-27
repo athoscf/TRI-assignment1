@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/webots_ros2
+CMAKE_SOURCE_DIR = /root/webots_ros2/firstrobot_webots/firstrobot_webots
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/webots_ros2/build/firstrobot_webots
+CMAKE_BINARY_DIR = /root/webots_ros2/firstrobot_webots/build/firstrobot_webots
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /root/webots_ros2/build/firstrobot_webots && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/webots_ros2 /root/webots_ros2 /root/webots_ros2/build/firstrobot_webots /root/webots_ros2/build/firstrobot_webots /root/webots_ros2/build/firstrobot_webots/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/webots_ros2/firstrobot_webots/build/firstrobot_webots && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/webots_ros2/firstrobot_webots/firstrobot_webots /root/webots_ros2/firstrobot_webots/firstrobot_webots /root/webots_ros2/firstrobot_webots/build/firstrobot_webots /root/webots_ros2/firstrobot_webots/build/firstrobot_webots /root/webots_ros2/firstrobot_webots/build/firstrobot_webots/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

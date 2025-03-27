@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/webots_ros2
+CMAKE_SOURCE_DIR = /root/webots_ros2/firstrobot_webots/firstrobot_webots
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/webots_ros2/build/firstrobot_webots
+CMAKE_BINARY_DIR = /root/webots_ros2/firstrobot_webots/build/firstrobot_webots
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/webots_ros2/build/firstrobot_webots/CMakeFiles /root/webots_ros2/build/firstrobot_webots//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/webots_ros2/firstrobot_webots/build/firstrobot_webots/CMakeFiles /root/webots_ros2/firstrobot_webots/build/firstrobot_webots//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/webots_ros2/build/firstrobot_webots/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/webots_ros2/firstrobot_webots/build/firstrobot_webots/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -211,6 +211,19 @@ obstacle_avoider/fast:
 .PHONY : obstacle_avoider/fast
 
 #=============================================================================
+# Target rules for targets named robot_seeker
+
+# Build rule for target.
+robot_seeker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_seeker
+.PHONY : robot_seeker
+
+# fast build rule for target.
+robot_seeker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_seeker.dir/build.make CMakeFiles/robot_seeker.dir/build
+.PHONY : robot_seeker/fast
+
+#=============================================================================
 # Target rules for targets named firstrobot_webots
 
 # Build rule for target.
@@ -271,6 +284,30 @@ src/ObstacleAvoider.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle_avoider.dir/build.make CMakeFiles/obstacle_avoider.dir/src/ObstacleAvoider.cpp.s
 .PHONY : src/ObstacleAvoider.cpp.s
 
+src/RobotSeeker.o: src/RobotSeeker.cpp.o
+.PHONY : src/RobotSeeker.o
+
+# target to build an object file
+src/RobotSeeker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_seeker.dir/build.make CMakeFiles/robot_seeker.dir/src/RobotSeeker.cpp.o
+.PHONY : src/RobotSeeker.cpp.o
+
+src/RobotSeeker.i: src/RobotSeeker.cpp.i
+.PHONY : src/RobotSeeker.i
+
+# target to preprocess a source file
+src/RobotSeeker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_seeker.dir/build.make CMakeFiles/robot_seeker.dir/src/RobotSeeker.cpp.i
+.PHONY : src/RobotSeeker.cpp.i
+
+src/RobotSeeker.s: src/RobotSeeker.cpp.s
+.PHONY : src/RobotSeeker.s
+
+# target to generate assembly for a file
+src/RobotSeeker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_seeker.dir/build.make CMakeFiles/robot_seeker.dir/src/RobotSeeker.cpp.s
+.PHONY : src/RobotSeeker.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,12 +325,16 @@ help:
 	@echo "... uninstall"
 	@echo "... firstrobot_webots"
 	@echo "... obstacle_avoider"
+	@echo "... robot_seeker"
 	@echo "... src/MyRobotDriver.o"
 	@echo "... src/MyRobotDriver.i"
 	@echo "... src/MyRobotDriver.s"
 	@echo "... src/ObstacleAvoider.o"
 	@echo "... src/ObstacleAvoider.i"
 	@echo "... src/ObstacleAvoider.s"
+	@echo "... src/RobotSeeker.o"
+	@echo "... src/RobotSeeker.i"
+	@echo "... src/RobotSeeker.s"
 .PHONY : help
 
 

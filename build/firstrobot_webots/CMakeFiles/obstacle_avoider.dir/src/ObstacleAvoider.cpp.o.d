@@ -1,6 +1,7 @@
 CMakeFiles/obstacle_avoider.dir/src/ObstacleAvoider.cpp.o: \
- /root/webots_ros2/src/ObstacleAvoider.cpp /usr/include/stdc-predef.h \
- /root/webots_ros2/include/firstrobot_webots/ObstacleAvoider.hpp \
+ /root/webots_ros2/firstrobot_webots/firstrobot_webots/src/ObstacleAvoider.cpp \
+ /usr/include/stdc-predef.h \
+ /root/webots_ros2/firstrobot_webots/firstrobot_webots/include/firstrobot_webots/ObstacleAvoider.hpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
