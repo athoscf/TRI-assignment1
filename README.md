@@ -14,7 +14,7 @@ Faculty of Engineering of University of Porto
 
 ## Requirements
 
-Make sure to have ROS2 installed, as well as a docker container initialized as described in moodle
+Make sure to have an environment with ROS2 and webots installed. In our case, the docker container initialized as described in moodle.
 
 ## **How to run project**
 
@@ -24,7 +24,7 @@ Make sure to have ROS2 installed, as well as a docker container initialized as d
 git clone https://github.com/athoscf/TRI-assignment1
 ```
 
-2. Run the docker
+2. Run the docker (optional)
 
 ```bash
 docker run --rm -it --gpus all  -e DISPLAY=$DISPLAY  -v /tmp/.X11-unix:/tmp/.X11-unix  -v /path_to_ROS2_workspace_in_local/:/path_to_workspace_in_docker tribe_simulation
@@ -80,4 +80,7 @@ TRI-ASSIGNMENT1/
 
 ## Demo
 
-https://github.com/user-attachments/assets/11bf8eeb-111b-4288-ada7-9012b2a71e95
+
+https://github.com/user-attachments/assets/54b933f0-c918-4246-a5db-08c0af35a644
+
+
