@@ -1,6 +1,7 @@
 # Simple Reactive Robots
 
 **Intelligent Robotics Topics 2024/2025 | Masters in Artificial Intelligence**
+Faculty of Engineering of University of Porto
 
 ## Group A1G
 
@@ -42,30 +43,31 @@ ros2 launch firstrobot_webots robot_launch.py
 
 ```
 TRI-ASSIGNMENT1/
-├── build/
-├── include/
-│   └── firstrobot_webots/
-│       ├── MyRobotDriver.hpp
-│       ├── ObstacleAvoider.hpp
-│       └── RobotSeeker.hpp
-├── install/
-├── launch/
-│   └── robot_launch.py
-├── log/
-├── resource/
-│   ├── robot1.urdf
-│   └── robot2.urdf
-├── src/
-│   ├── MyRobotDriver.cpp
-│   ├── ObstacleAvoider.cpp
-│   └── RobotSeeker.cpp
-├── worlds/
-│   ├── my_world.wbt
-│   └── my_world2.wbt
-├── CMakeLists.txt
-├── LICENSE
-├── my_robot_driver.xml
-├── package.xml
+├── firstrobot_webots/
+│   ├── build/
+│   ├── include/
+│   │   └── firstrobot_webots/
+│   │       ├── MyRobotDriver.hpp
+│   │       ├── ObstacleAvoider.hpp
+│   │       └── RobotSeeker.hpp
+│   ├── install/
+│   ├── launch/
+│   │   └── robot_launch.py
+│   ├── log/
+│   ├── resource/
+│   │   ├── robot1.urdf
+│   │   └── robot2.urdf
+│   ├── src/
+│   │   ├── MyRobotDriver.cpp
+│   │   ├── ObstacleAvoider.cpp
+│   │   └── RobotSeeker.cpp
+│   ├── worlds/
+│   │   ├── my_world.wbt
+│   │   └── my_world2.wbt
+│   ├── CMakeLists.txt
+│   ├── LICENSE
+│   ├── my_robot_driver.xml
+│   ├── package.xml
 └── README.md
 ```
 
